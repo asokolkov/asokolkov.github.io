@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: "Montserrat";
     src: url("../fonts/montserratsemiboldwebfont.woff2") format('woff2')
     url("../fonts/montserratsemiboldwebfont.woff") format('woff');
@@ -9,6 +9,13 @@
     font-family: "Montserrat";
     src: url("../fonts/montserratregularwebfont.woff2") format('woff2')
     url("../fonts/montserratregularwebfont.woff") format('woff');
+    font-weight: 400;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/PushsterRegular.ttf") format('truetype');
     font-weight: 400;
     font-style: normal;
 }
