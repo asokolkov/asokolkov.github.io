@@ -1,16 +1,12 @@
 @font-face {
     font-family: "MontserratSemiBold";
-    src: url("../fonts/montserratsemiboldwebfont.woff2") format('woff2')
-    url("../fonts/montserratsemiboldwebfont.woff") format('woff'),
-    url("../fonts/MontserratSemiBold.ttf") format('truetype');
+    src: url("../fonts/MontserratSemiBold.ttf") format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 @font-face {
     font-family: "MontserratRegular";
-    src: url("../fonts/montserratregularwebfont.woff2") format('woff2')
-    url("../fonts/montserratregularwebfont.woff") format('woff'),
-    url("../fonts/MontserratRegular.ttf") format('truetype');
+    src: url("../fonts/MontserratRegular.ttf") format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -31,7 +27,6 @@ html {
 body {
     margin: 0;
     font-family: "MontserratSemiBold";
-    font-weight: 600;
     color: var(--text-color);
     background-color: var(--bg-color);
     overflow-y: overlay;
@@ -89,7 +84,6 @@ img {
 
 .nav__link {
     font-family: "MontserratRegular";
-    font-weight: 400;
     font-size: 20px;
     transition: color .2s linear;
     margin: 0px 15px;
@@ -125,7 +119,6 @@ img {
 .section__title {
     font-size: 40px;
     font-family: "MontserratSemiBold";
-    font-weight: 600;
     margin-bottom: 20px;
     color: var(--active-color);
 }
@@ -134,7 +127,6 @@ img {
     font-size: 24px;
     line-height: 140%;
     font-family: "MontserratRegular";
-    font-weight: 400;
     margin-bottom: 20px;
 }
 
@@ -173,7 +165,6 @@ img {
 .story__title {
     font-size: 40px;
     font-family: "MontserratSemiBold";
-    font-weight: 600;
     color: var(--active-color);
     margin-bottom: 25px;
 }
@@ -182,7 +173,6 @@ img {
     font-size: 24px;
     line-height: 140%;
     font-family: "MontserratRegular";
-    font-weight: 400;
     margin-bottom: 25px;
 }
 
@@ -190,6 +180,5 @@ img {
     font-size: 24px;
     line-height: 140%;
     font-family: "MontserratRegular";
-    font-weight: 400;
     color: #575757;
 }
