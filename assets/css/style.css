@@ -2,7 +2,7 @@
     font-family: "MontserratSemiBold";
     src: url("../fonts/montserratsemiboldwebfont.woff2") format('woff2')
     url("../fonts/montserratsemiboldwebfont.woff") format('woff'),
-    url("../fonts/Montserrat-SemiBold.ttf") format('truetype');
+    url("../fonts/MontserratSemiBold.ttf") format('truetype');
     font-weight: 600;
     font-style: normal;
 }
@@ -10,7 +10,7 @@
     font-family: "MontserratRegular";
     src: url("../fonts/montserratregularwebfont.woff2") format('woff2')
     url("../fonts/montserratregularwebfont.woff") format('woff'),
-    url("../fonts/Montserrat-Regular.ttf") format('truetype');
+    url("../fonts/MontserratRegular.ttf") format('truetype');
     font-weight: 400;
     font-style: normal;
 }
