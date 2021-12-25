@@ -4,4 +4,4 @@ function a(){
     alert(value);  
     } 
 
-a();
+// a();
