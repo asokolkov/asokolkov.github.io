@@ -145,7 +145,7 @@ body::-webkit-scrollbar-thumb {
 
 .social {
     display: flex;
-    margin: 40px;
+    margin: 0 20px;
 }
 
 .social_icon {
