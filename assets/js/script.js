@@ -1,4 +1,4 @@
-var value = 50;
+let value = 50;
 
 function a(){  
     alert(value);  

@@ -27,7 +27,7 @@
 
 body {
     margin: 0;
-    overflow: overlay;
+    overflow: initial;
 }
 
 body::-webkit-scrollbar {
@@ -63,13 +63,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .name {
-    font-family: "MontserratSemiBold";
+    font-family: "MontserratSemiBold", sans-serif;
     font-size: 90px;
     line-height: 110%;
 }
 
 .status {
-    font-family: "MontserratLight";
+    font-family: "MontserratLight", sans-serif;
     font-size: 45px;
 }
 
@@ -89,13 +89,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .theme {
-    font-family: "MontserratSemiBold";
+    font-family: "MontserratSemiBold", sans-serif;
     font-size: 70px;
     display: flex;
 }
 
 .text {
-    font-family: "MontserratRegular";
+    font-family: "MontserratRegular", sans-serif;
     font-size: 25px;
     line-height: 130%;
     display: flex;
@@ -157,6 +157,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .credit {
@@ -167,4 +168,62 @@ body::-webkit-scrollbar-thumb {
 
 .center {
     margin: 0 auto 0 auto;
+}
+
+@media only screen and (max-width: 1000px) {
+    .label {
+        margin: auto auto;
+    }
+    .name {
+        font-family: "MontserratSemiBold", sans-serif;
+        font-size: 130px;
+        line-height: 110%;
+    }
+    .status {
+        font-family: "MontserratLight", sans-serif;
+        font-size: 60px;
+    }
+
+    .second_sec {
+        color: var(--color2);
+        background-color: var(--color1);
+        height: 100%;
+    }
+    .second_inner {
+        flex-direction: column-reverse;
+    }
+    .theme {
+        font-family: "MontserratSemiBold", sans-serif;
+        font-size: 110px;
+        display: flex;
+    }
+    .text {
+        font-family: "MontserratRegular", sans-serif;
+        font-size: 60px;
+        line-height: 130%;
+        display: flex;
+    }
+    .headshot {
+        width: 600px;
+        height: 800px;
+        margin: auto auto 30px auto;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+
+    .project_image {
+        width: 600px;
+        height: 800px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+
+    .social {
+        display: flex;
+        margin: 0 40px;
+    }
+    .social_icon {
+        width: 80px;
+        height: 80px;
+    }
 }
