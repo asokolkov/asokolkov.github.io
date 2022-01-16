@@ -51,6 +51,17 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
 }
 
+.zero-sec {
+    background-color: #d72f48;
+    height: 10vh;
+}
+.zero-inner {
+    margin: auto;
+    font-family: "MontserratSemiBold", sans-serif;
+    font-size: 20px;
+    color: var(--color1);
+}
+
 .first-sec {
     color: var(--color1);
     background-color: var(--color2);
@@ -140,8 +151,6 @@ body::-webkit-scrollbar-thumb {
 
 .project-image:hover {
     transform: scale(.9);
-
-    /*border: var(--color3) solid 20px;*/
     transition: .05s linear;
 }
 
@@ -180,11 +189,13 @@ body::-webkit-scrollbar-thumb {
 .e-to-show {
     opacity: 0;
     transform: translateY(20px);
+    color: var(--color3);
 }
 .shown.e-to-show {
     opacity: 1;
     transition: all 1.5s;
     transform: translateY(0%);
+    color: var(--color1);
 }
 
 @media only screen and (max-width: 1000px) {
