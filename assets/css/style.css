@@ -31,7 +31,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-    width: 10px;
+    width: 7px;
   }
   
 body::-webkit-scrollbar-thumb {
@@ -44,14 +44,14 @@ body::-webkit-scrollbar-thumb {
     display: flex;
 }
 
-.sec_inner {
+.sec-inner {
     margin: 60px;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.first_sec {
+.first-sec {
     color: var(--color1);
     background-color: var(--color2);
     height: 100vh;
@@ -63,7 +63,7 @@ body::-webkit-scrollbar-thumb {
 
 .name {
     font-family: "MontserratSemiBold", sans-serif;
-    font-size: 90px;
+    font-size: 110px;
     line-height: 110%;
 }
 
@@ -72,13 +72,13 @@ body::-webkit-scrollbar-thumb {
     font-size: 45px;
 }
 
-.second_sec {
+.second-sec {
     color: var(--color2);
     background-color: var(--color1);
     height: 100vh;
 }
 
-.second_inner {
+.second-inner {
     justify-content: space-around;
     flex-direction: unset;
 }
@@ -107,12 +107,12 @@ body::-webkit-scrollbar-thumb {
     object-fit: cover;
 }
 
-.headshot_container {
+.headshot-container {
     display: flex;
     align-items: center;
 }
 
-.third_sec {
+.third-sec {
     color: var(--color1);
     background-color: var(--color2);
 }
@@ -131,21 +131,21 @@ body::-webkit-scrollbar-thumb {
     display: flex;
 }
 
-.project_image {
+.project-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: .05s ease-in-out;
 }
 
-.project_image:hover {
+.project-image:hover {
     transform: scale(.9);
 
     /*border: var(--color3) solid 20px;*/
     transition: .05s linear;
 }
 
-.fourth_sec {
+.fourth-sec {
     color: var(--color2);
     background-color: var(--color1);
 }
@@ -155,7 +155,7 @@ body::-webkit-scrollbar-thumb {
     margin: 0 20px;
 }
 
-.social_icon {
+.social-icon {
     width: 40px;
     height: 40px;
 }
@@ -177,6 +177,16 @@ body::-webkit-scrollbar-thumb {
     margin: 0 auto 0 auto;
 }
 
+.e-to-show {
+    opacity: 0;
+    transform: translateY(20px);
+}
+.shown.e-to-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+}
+
 @media only screen and (max-width: 1000px) {
     .label {
         margin: auto auto;
@@ -191,12 +201,12 @@ body::-webkit-scrollbar-thumb {
         font-size: 60px;
     }
 
-    .second_sec {
+    .second-sec {
         color: var(--color2);
         background-color: var(--color1);
         height: 100%;
     }
-    .second_inner {
+    .second-inner {
         flex-direction: column-reverse;
     }
     .theme {
@@ -218,7 +228,7 @@ body::-webkit-scrollbar-thumb {
         object-fit: cover;
     }
 
-    .project_image {
+    .project-image {
         width: 600px;
         height: 800px;
         border-radius: 20px;
@@ -229,7 +239,7 @@ body::-webkit-scrollbar-thumb {
         display: flex;
         margin: 0 40px;
     }
-    .social_icon {
+    .social-icon {
         width: 80px;
         height: 80px;
     }
