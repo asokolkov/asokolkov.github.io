@@ -27,7 +27,7 @@
 
 body {
     margin: 0;
-    overflow: overlay;
+    background-color: #090909;
 }
 
 body::-webkit-scrollbar {
@@ -38,220 +38,190 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--color3);
 }
 
-.section {
-    width: 100%;
-    height: 100%;
+.mp {
     display: flex;
+    width: 100%;
+    height: 100vh;
 }
 
-.sec-inner {
-    margin: 60px;
-    width: 100%;
+.mp-i {
     display: flex;
-    flex-direction: column;
-}
-
-.zero-sec {
-    background-color: #d72f48;
-    height: 10vh;
-}
-.zero-inner {
+    width: 93%;
+    height: 90%;
     margin: auto;
-    font-family: "MontserratSemiBold", sans-serif;
-    font-size: 20px;
-    color: var(--color1);
+    flex-flow: column;
 }
 
-.first-sec {
-    color: var(--color1);
-    background-color: var(--color2);
-    height: 100vh;
+.mp-i-header {
+    display: flex;
+    width: 100%;
+    height: 8%;
 }
 
-.label {
+.mp-i-header-i {
+    display: flex;
+    margin: 0 0 0 auto;
+}
+
+.mp-i-header-i-e {
+    font-family: "MontserratRegular", sans-serif;
+    color: #f1f0f3;
+    font-size: 26px;
+
+    display: flex;
+    margin: auto 0 auto 40px;
+}
+
+.mp-i-i {
+    display: flex;
+    width: 100%;
+    height: 92%;
+    flex-flow: row;
+}
+
+.mp-i-i-text {
+    color: #f1f0f3;
     margin: auto auto 0 0;
+    display: flex;
+    flex-flow: column;
 }
 
-.name {
+.mp-i-i-text-name {
     font-family: "MontserratSemiBold", sans-serif;
-    font-size: 110px;
-    line-height: 110%;
+    font-size: 90px;
+    display: flex;
 }
 
-.status {
-    font-family: "MontserratLight", sans-serif;
+.mp-i-i-text-job {
+    font-family: "MontserratRegular", sans-serif;
     font-size: 45px;
+    display: flex;
 }
 
-.second-sec {
-    color: var(--color2);
-    background-color: var(--color1);
-    height: 100vh;
+.mp-i-i-languages {
+    margin: auto 0 0 auto;
+    display: flex;
 }
 
-.second-inner {
-    justify-content: space-around;
-    flex-direction: unset;
+.mp-i-i-languages-language {
+    display: flex;
+    font-family: "MontserratRegular", sans-serif;
+    color: #f1f0f3;
+    margin: auto 0 auto 20px;
+    font-size: 25px;
+}
+
+.filler {
+    display: flex;
+    height: 300px;
+}
+
+.filler-s {
+    display: flex;
+    height: 60px;
 }
 
 .article {
-    margin: auto auto auto 0;
+    display: flex;
 }
 
-.theme {
+.article-i {
     font-family: "MontserratSemiBold", sans-serif;
-    font-size: 70px;
+    color: #f1f0f3;
+    font-size: 50px;
+
     display: flex;
+    margin: auto;
+}
+
+.sk {
+    display: flex;
+    width: 100%;
+    height: 40vh;
+}
+
+.sk-i {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    height: 100%;
+    width: 50%;
 }
 
 .text {
+    display: flex;
     font-family: "MontserratRegular", sans-serif;
+    color: #f1f0f3;
+    margin: auto;
     font-size: 25px;
-    line-height: 130%;
+}
+
+.ed {
     display: flex;
-}
-
-.headshot {
-    width: 300px;
-    height: 400px;
-    margin-left: 50px;
-    object-fit: cover;
-}
-
-.headshot-container {
-    display: flex;
-    align-items: center;
-}
-
-.third-sec {
-    color: var(--color1);
-    background-color: var(--color2);
-}
-
-.projects {
     width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-    display: flex;
-    margin-top: 20px;
 }
 
-.project {
-    width: 300px;
-    height: 300px;
+.ed-i {
     display: flex;
-}
-
-.project-image {
-    width: 100%;
+    margin: auto;
     height: 100%;
-    object-fit: cover;
-    transition: .05s ease-in-out;
+    width: 50%;
+    flex-flow: column;
 }
 
-.project-image:hover {
-    transform: scale(.9);
-    transition: .05s linear;
-}
-
-.fourth-sec {
-    color: var(--color2);
-    background-color: var(--color1);
-}
-
-.social {
+.ed-i-header {
     display: flex;
-    margin: 0 20px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 12px;
 }
 
-.social-icon {
-    width: 40px;
-    height: 40px;
+.uni {
+    font-family: "MontserratMedium", sans-serif;
+    color: #f1f0f3;
+    font-size: 30px;
 }
 
-.credits {
+.date {
+    font-family: "MontserratMedium", sans-serif;
+    color: #777777;
+    font-size: 30px;
+}
+
+.ed-i-degree {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    font-family: "MontserratMedium", sans-serif;
+    color: #f1f0f3;
+    margin: auto auto 35px 0;
+    font-size: 25px;
+}
+
+.c {
+    display: flex;
+    width: 100%;
+}
+
+.c-i {
+    display: flex;
+    margin: auto;
+    flex-flow: column;
+}
+
+.c-i-links {
+    display: flex;
+    flex-flow: row;
     margin-bottom: 20px;
 }
 
-.credit {
-    margin: 20px;
-    vertical-align: middle;
-    align-items: center;
+.c-i-contacts {
+    display: flex;
+    flex-flow: row;
 }
 
-.center {
-    margin: 0 auto 0 auto;
-}
-
-.e-to-show {
-    opacity: 0;
-    transform: translateY(20px);
-    color: var(--color3);
-}
-.shown.e-to-show {
-    opacity: 1;
-    transition: all 1.5s;
-    transform: translateY(0%);
-    color: var(--color1);
-}
-
-@media only screen and (max-width: 1000px) {
-    .label {
-        margin: auto auto;
-    }
-    .name {
-        font-family: "MontserratSemiBold", sans-serif;
-        font-size: 130px;
-        line-height: 110%;
-    }
-    .status {
-        font-family: "MontserratLight", sans-serif;
-        font-size: 60px;
-    }
-
-    .second-sec {
-        color: var(--color2);
-        background-color: var(--color1);
-        height: 100%;
-    }
-    .second-inner {
-        flex-direction: column-reverse;
-    }
-    .theme {
-        font-family: "MontserratSemiBold", sans-serif;
-        font-size: 110px;
-        display: flex;
-    }
-    .text {
-        font-family: "MontserratRegular", sans-serif;
-        font-size: 60px;
-        line-height: 130%;
-        display: flex;
-    }
-    .headshot {
-        width: 600px;
-        height: 800px;
-        margin: auto auto 30px auto;
-        border-radius: 20px;
-        object-fit: cover;
-    }
-
-    .project-image {
-        width: 600px;
-        height: 800px;
-        border-radius: 20px;
-        object-fit: cover;
-    }
-
-    .social {
-        display: flex;
-        margin: 0 40px;
-    }
-    .social-icon {
-        width: 80px;
-        height: 80px;
-    }
+.c-text {
+    display: flex;
+    font-family: "MontserratRegular", sans-serif;
+    color: #f1f0f3;
+    margin: 0 25px 0 25px;
+    font-size: 25px;
 }
