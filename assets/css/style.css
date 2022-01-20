@@ -296,6 +296,31 @@ a {
     display: none;
 }
 
+.notification {
+    font-family: "MontserratMedium", sans-serif;
+    font-size: 30px;
+
+    display: flex;
+    opacity: 0;
+    transition: transform 1.5s, opacity 1.5s;
+    position: fixed;
+    width: 220px;
+    height: 60px;
+    top: 30px;
+    left: 30px;
+    background-color: #7727ff;
+    z-index: 10000;
+}
+
+.notification-i {
+    display: flex;
+    margin: auto;
+}
+
+.not-shown {
+    opacity: 1;
+}
+
 @media only screen and (max-width: 1000px) {
     .hamburger {
         display: flex;

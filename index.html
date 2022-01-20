@@ -13,6 +13,10 @@
         <img class="to-top-b-img" src="assets/images/arrow.png" alt=""/>
     </a>
 
+    <div id="notification" class="notification">
+        <div id="notification-i" class="notification-i">Text Copied</div>
+    </div>
+
     <div class="mp">
         <div class="mp-header">
             <div id="list" class="mp-header-i">
@@ -133,14 +137,15 @@
             </a>
         </div>
         <div class="c-contacts e-to-show">
-            <div class="c-text text">+7-982-608-08-08</div>
-            <div class="c-text text">a.e.sokolkov@gmail.com</div>
+            <div class="c-text text" onclick="copyToClipboard(this)">+7-982-608-08-08</div>
+            <div class="c-text text" onclick="copyToClipboard(this)">a.e.sokolkov@gmail.com</div>
         </div>
     </div>
 
     <script src="https://yandex.st/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="./assets/js/jquery.js"></script>
     <script type="text/javascript" src="./assets/js/hamburger.js"></script>
+    <script type="text/javascript" src="./assets/js/copyToClipboard.js"></script>
     <script type="text/javascript" src="./assets/js/menu_scroll.js"></script>
     <script type="text/javascript" src="./assets/js/script.js"></script>
 
