@@ -155,18 +155,13 @@ a {
     cursor: pointer;
 }
 
-.filler {
-    display: flex;
-    height: 300px;
-}
-
-.filler-s {
-    display: flex;
-    height: 60px;
+.block {
+    margin-bottom: 300px;
 }
 
 .article {
     display: flex;
+    margin: 60px auto;
 }
 
 .article-i {
@@ -195,6 +190,7 @@ a {
     display: flex;
     font-family: "MontserratRegular", sans-serif;
     margin: auto;
+    line-height: 150%;
     font-size: 25px;
 }
 
@@ -239,6 +235,7 @@ a {
 .c {
     display: flex;
     width: 100%;
+    margin-bottom: 60px;
 }
 
 .c-i {
@@ -311,6 +308,7 @@ a {
 .b-mid {
     font-family: "MontserratRegular", sans-serif;
     font-size: 25px;
+    line-height: 150%;
 
     display: flex;
     margin: 0 40px;
@@ -329,6 +327,25 @@ a {
 .b-tag {
     display: flex;
     margin: auto;
+}
+
+.ab {
+    display: flex;
+    width: 100%;
+}
+
+.ab-i {
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    width: 50%;
+}
+
+.im {
+    display: flex;
+    margin: auto;
+    object-fit: contain;
+    width: 100%;
 }
 
 .e-to-show {
