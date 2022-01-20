@@ -41,6 +41,7 @@ body::-webkit-scrollbar-thumb {
 
 a {
     text-decoration: none;
+    color: #f1f0f3;
 }
 
 .button {
@@ -262,21 +263,28 @@ a {
     color: #7727ff;
 }
 
-.p-i {
+.board {
     display: flex;
-    margin: auto;
-    width: 70%;
+    width: 100%;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
 }
 
 .b {
+    border: 1px solid #f1f0f3;
+    transition: border .2s linear;
+
     display: flex;
-    width: 400px;
-    height: 300px;
-    border: 1px #f1f0f3 solid;
+    width: 370px;
+    height: 370px;
+    margin: 20px;
+    padding: 20px;
     flex-flow: column;
+}
+
+.b:hover {
+    border: 1px solid #7727ff;
+    cursor: pointer;
 }
 
 .b-top {
@@ -284,7 +292,7 @@ a {
     font-size: 30px;
 
     display: flex;
-    margin: 20px auto;
+    margin: 0 auto 20px auto;
 }
 
 .b-mid {
@@ -293,7 +301,7 @@ a {
     line-height: 150%;
 
     display: flex;
-    margin: 0 40px;
+    margin: auto;
 }
 
 .b-bot {
@@ -302,13 +310,13 @@ a {
     color: #777777;
 
     display: flex;
-    flex-flow: row;
-    margin: auto 40px 20px 40px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .b-tag {
     display: flex;
-    margin: auto;
+    margin: 10px 10px 0 10px;
 }
 
 .im {
