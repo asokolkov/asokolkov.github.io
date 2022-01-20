@@ -99,7 +99,6 @@ a {
 .mp-i-header {
     display: flex;
     width: 100%;
-    height: 8%;
 }
 
 .mp-i-header-i {
@@ -113,8 +112,10 @@ a {
 
     display: flex;
     margin: auto 0 auto 40px;
-    transition: color .2s linear;
-    cursor: pointer;
+}
+
+.mp-i-header-i.show {
+    display: flex;
 }
 
 .mp-i-i {
@@ -153,8 +154,6 @@ a {
 
     margin: auto 0 auto 20px;
     display: flex;
-    transition: color .2s linear;
-    cursor: pointer;
 }
 
 .article {
@@ -172,18 +171,22 @@ a {
     margin: auto;
 }
 
-.sk {
-    display: flex;
-    width: 100%;
-    height: 40vh;
-}
-
 .sk-i {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: auto;
     height: 100%;
-    width: 70%;
+    width: 100%;
+}
+
+.sk-text {
+    font-family: "MontserratRegular", sans-serif;
+    line-height: 150%;
+    font-size: 25px;
+
+    display: flex;
+    margin: 40px;
 }
 
 .text {
@@ -197,7 +200,21 @@ a {
 .section {
     display: flex;
     margin: 0 auto 300px auto;
+    width: 50%;
+    flex-flow: column;
+}
+
+.section-m {
+    display: flex;
+    margin: 0 auto 300px auto;
     width: 60%;
+    flex-flow: column;
+}
+
+.section-last {
+    display: flex;
+    margin: 0 auto 60px auto;
+    width: 50%;
     flex-flow: column;
 }
 
@@ -226,27 +243,18 @@ a {
     font-size: 25px;
 }
 
-.c {
-    display: flex;
-    width: 100%;
-    margin-bottom: 60px;
-}
-
-.c-i {
-    display: flex;
-    margin: auto;
-    flex-flow: column;
-}
-
-.c-i-links {
+.c-links {
     display: flex;
     flex-flow: row;
     margin-bottom: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.c-i-contacts {
+.c-contacts {
     display: flex;
-    flex-flow: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .c-text {
@@ -254,13 +262,14 @@ a {
     color: #f1f0f3;
     font-size: 25px;
 
-    margin: 0 25px 0 25px;
+    margin: 0 25px;
     display: flex;
-    transition: color .2s linear;
 }
 
 .c-text:hover, .mp-i-header-i-e:hover, .mp-i-i-languages-language:hover {
     color: #7727ff;
+    transition: color .2s linear;
+    cursor: pointer;
 }
 
 .board {
@@ -272,7 +281,6 @@ a {
 
 .b {
     border: 1px solid #f1f0f3;
-    transition: border .2s linear;
 
     display: flex;
     width: 370px;
@@ -284,6 +292,7 @@ a {
 
 .b:hover {
     border: 1px solid #7727ff;
+    transition: border .2s linear;
     cursor: pointer;
 }
 
@@ -326,14 +335,30 @@ a {
     width: 100%;
 }
 
+.hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .hamburger {
+        display: flex;
+        margin: auto 0 auto auto;
+    }
+    .mp-i-header-i {
+        display: none;
+        flex-flow: column;
+    }
+    .mp-i-header-i-e {
+        margin: 20px 0 20px 20px;
+    }
+}
+
 .e-to-show {
     opacity: 0;
+    transition: transform 1.5s, opacity 1.5s;
     transform: translateY(20px);
-    color: var(--color3);
 }
-.shown.e-to-show {
+.shown {
     opacity: 1;
-    transition: all 1.5s;
     transform: translateY(0%);
-    color: var(--color1);
 }

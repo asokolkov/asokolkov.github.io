@@ -16,13 +16,16 @@
     <div class="mp">
         <div class="mp-i">
             <div class="mp-i-header">
-                <div class="mp-i-header-i">
+                <div id="list" class="mp-i-header-i">
                     <div id="sk-l" class="mp-i-header-i-e e-to-show">Skills</div>
                     <div id="ed-l" class="mp-i-header-i-e e-to-show">Education</div>
                     <div id="p-l" class="mp-i-header-i-e e-to-show">Projects</div>
                     <div id="ab-l" class="mp-i-header-i-e e-to-show">About</div>
                     <div id="c-l" class="mp-i-header-i-e e-to-show">Contacts</div>
                 </div>
+                <a id="hamburger" class="hamburger mp-i-header-i-e e-to-show">
+                    <img class="to-top-b-img" src="assets/images/menu.png" alt=""/>
+                </a>
             </div>
             <div class="mp-i-i">
                 <div class="mp-i-i-text">
@@ -37,20 +40,20 @@
         </div>
     </div>
 
-    <div id="sk" class="section">
+    <div id="sk" class="section-m">
         <div class="article e-to-show">
             <div class="article-i">Skills</div>
         </div>
         <div class="sk-i">
-            <div class="text e-to-show">C#</div>
-            <div class="text e-to-show">Figma</div>
-            <div class="text e-to-show">JS</div>
-            <div class="text e-to-show">HTML</div>
-            <div class="text e-to-show">Swift</div>
-            <div class="text e-to-show">Python</div>
-            <div class="text e-to-show">C++</div>
-            <div class="text e-to-show">Minecraft</div>
-            <div class="text e-to-show">CSS</div>
+            <div class="sk-text e-to-show">C#</div>
+            <div class="sk-text e-to-show">Figma</div>
+            <div class="sk-text e-to-show">JS</div>
+            <div class="sk-text e-to-show">HTML</div>
+            <div class="sk-text e-to-show">Swift</div>
+            <div class="sk-text e-to-show">Python</div>
+            <div class="sk-text e-to-show">C++</div>
+            <div class="sk-text e-to-show">Minecraft</div>
+            <div class="sk-text e-to-show">CSS</div>
         </div>
     </div>
 
@@ -72,13 +75,13 @@
         </div>
     </div>
 
-    <div id="p" class="section">
+    <div id="p" class="section-m">
         <div class="article e-to-show">
             <div class="article-i">Projects</div>
         </div>
         <div class="board">
             <a href="https://github.com/asokolkov/spellchecker" target="_blank">
-                <div class="b">
+                <div class="b e-to-show">
                     <div class="b-top">Spellchecker</div>
                     <div class="b-mid">
                         Program that corrects the text you wrote with Levenshtein algorithm
@@ -90,7 +93,7 @@
                 </div>
             </a>
             <a href="https://github.com/asokolkov/geocoder" target="_blank">
-                <div class="b">
+                <div class="b e-to-show">
                     <div class="b-top">Geocoder</div>
                     <div class="b-mid">
                         Program that returns latitude and longitude when you enter an address
@@ -115,38 +118,37 @@
             th13 base.<br>
             Proofs:
         </div>
-        <img class="im" src="assets/images/base.jpg" alt=""/>
+        <img class="im e-to-show" src="assets/images/base.jpg" alt=""/>
     </div>
 
-    <div id="c" class="c">
-        <div class="c-i">
-            <div class="c-i-links e-to-show">
-                <a href="https://t.me/kfcgenius" target="_blank">
-                    <div class="c-text">telegram</div>
-                </a>
-                <a href="https://vk.com/kfcgenius" target="_blank">
-                    <div class="c-text">vk</div>
-                </a>
-                <a href="https://github.com/asokolkov" target="_blank">
-                    <div class="c-text">linkedin</div>
-                </a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=a.e.sokolkov@gmail.com"
-                   target="_blank">
-                    <div class="c-text">mail</div>
-                </a>
-                <a href="https://github.com/asokolkov" target="_blank">
-                    <div class="c-text">github</div>
-                </a>
-            </div>
-            <div class="c-i-contacts e-to-show">
-                <div class="c-text">+7 982 608 08 08</div>
-                <div class="c-text">a.e.sokolkov@gmail.com</div>
-            </div>
+    <div id="c" class="section-last">
+        <div class="c-links e-to-show">
+            <a href="https://t.me/kfcgenius" target="_blank">
+                <div class="c-text">telegram</div>
+            </a>
+            <a href="https://vk.com/kfcgenius" target="_blank">
+                <div class="c-text">vk</div>
+            </a>
+            <a href="https://github.com/asokolkov" target="_blank">
+                <div class="c-text">linkedin</div>
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=a.e.sokolkov@gmail.com"
+               target="_blank">
+                <div class="c-text">mail</div>
+            </a>
+            <a href="https://github.com/asokolkov" target="_blank">
+                <div class="c-text">github</div>
+            </a>
+        </div>
+        <div class="c-contacts e-to-show">
+            <div class="c-text">+7-982-608-08-08</div>
+            <div class="c-text">a.e.sokolkov@gmail.com</div>
         </div>
     </div>
 
     <script src="https://yandex.st/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="./assets/js/jquery.js"></script>
+    <script type="text/javascript" src="./assets/js/hamburger.js"></script>
     <script type="text/javascript" src="./assets/js/menu_scroll.js"></script>
     <script type="text/javascript" src="./assets/js/script.js"></script>
 
