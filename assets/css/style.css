@@ -52,7 +52,7 @@ a {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    transition: background-color .3s, opacity .5s, visibility .5s;
+    transition: background-color .5s, opacity .5s, visibility .5s;
     opacity: 0;
     visibility: hidden;
     z-index: 1000;
@@ -60,10 +60,6 @@ a {
 
 .button:hover {
     cursor: pointer;
-    background-color: #333;
-}
-
-.button:active {
     background-color: #777777;
 }
 
@@ -79,7 +75,6 @@ a {
     margin: auto;
     object-fit: contain;
 }
-
 
 .mp {
     display: flex;
@@ -129,19 +124,6 @@ a {
     display: flex;
 }
 
-.mp-i-i-languages {
-    margin: auto 0 0 auto;
-    display: flex;
-}
-
-.mp-i-i-languages-language {
-    font-size: 25px;
-    font-family: "MontserratRegular", sans-serif;
-
-    margin: auto 0 auto 20px;
-    display: flex;
-}
-
 .article {
     display: flex;
     height: 100px;
@@ -166,19 +148,25 @@ a {
     width: 100%;
 }
 
-.sk-text {
-    font-family: "MontserratRegular", sans-serif;
-    line-height: 150%;
-    font-size: 25px;
+.c-text {
+    margin: 0 25px;
+}
 
-    display: flex;
+.b-text {
+    margin: auto;
+}
+
+.sk-text {
     margin: 40px;
+}
+
+.normal-text {
+    margin: 0;
 }
 
 .text {
     display: flex;
     font-family: "MontserratRegular", sans-serif;
-    margin: 0;
     line-height: 150%;
     font-size: 25px;
 }
@@ -223,10 +211,11 @@ a {
 }
 
 .ed-i-degree {
-    display: flex;
     font-family: "MontserratMedium", sans-serif;
-    margin: auto auto 35px 0;
     font-size: 25px;
+
+    display: flex;
+    margin: auto auto 35px 0;
 }
 
 .c-links {
@@ -241,15 +230,6 @@ a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-.c-text {
-    font-family: "MontserratRegular", sans-serif;
-    color: #f1f0f3;
-    font-size: 25px;
-
-    margin: 0 25px;
-    display: flex;
 }
 
 .c-text:hover, .mp-header-i-e:hover, .mp-i-languages-language:hover {
@@ -288,15 +268,6 @@ a {
 
     display: flex;
     margin: 0 auto 20px auto;
-}
-
-.b-mid {
-    font-family: "MontserratRegular", sans-serif;
-    font-size: 25px;
-    line-height: 150%;
-
-    display: flex;
-    margin: auto;
 }
 
 .b-bot {
