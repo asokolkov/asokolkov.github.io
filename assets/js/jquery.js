@@ -1,7 +1,7 @@
 let btn = $('.button');
 
 $(window).on('scroll', function() {
-    if ($(window).scrollTop() > 300) {
+    if ($(window).scrollTop() > 500) {
         btn.addClass('show');
     } else {
         btn.removeClass('show');
