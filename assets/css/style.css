@@ -43,6 +43,43 @@ a {
     text-decoration: none;
 }
 
+.button {
+    display: flex;
+    background-color: #7727ff;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+.button:active {
+    background-color: #777777;
+}
+
+.button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.to-top-b-img {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    object-fit: contain;
+}
+
+
 .mp {
     display: flex;
     width: 100%;
@@ -229,10 +266,6 @@ a {
     margin: 0 25px 0 25px;
     display: flex;
     transition: color .2s linear;
-}
-
-.c-text.active, .mp-i-header-i-e.active, .mp-i-i-languages-language.active {
-    border-bottom: #7727ff solid 4px;
 }
 
 .c-text:hover, .mp-i-header-i-e:hover, .mp-i-i-languages-language:hover {
