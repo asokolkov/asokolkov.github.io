@@ -23,6 +23,7 @@
     --color1: #f1f0f3; /*--color1: #e4e0da;*/
     --color2: #090909; /*--color2: #111111;*/
     --color3: #7727ff;
+    --hl-speed: .3s;
 }
 
 body {
@@ -99,6 +100,7 @@ a {
     font-size: 26px;
 
     display: flex;
+    transition: color var(--hl-speed) linear;
     margin: auto 0 auto 40px;
 }
 
@@ -150,6 +152,7 @@ a {
 
 .c-text {
     margin: 0 25px;
+    transition: color var(--hl-speed) linear;
 }
 
 .b-text {
@@ -232,9 +235,9 @@ a {
     flex-wrap: wrap;
 }
 
-.c-text:hover, .mp-header-i-e:hover, .mp-i-languages-language:hover {
+.c-text:hover, .mp-header-i-e:hover {
     color: #7727ff;
-    transition: color .2s linear;
+    transition: color var(--hl-speed) linear;
     cursor: pointer;
 }
 
@@ -247,18 +250,18 @@ a {
 
 .b {
     border: 1px solid #f1f0f3;
-
     display: flex;
     width: 370px;
     height: 370px;
     margin: 20px;
     padding: 20px;
     flex-flow: column;
+    transition: border var(--hl-speed) linear;
 }
 
 .b:hover {
     border: 1px solid #7727ff;
-    transition: border .2s linear;
+    transition: border var(--hl-speed) linear;
     cursor: pointer;
 }
 
@@ -302,7 +305,8 @@ a {
 
     display: flex;
     opacity: 0;
-    transition: transform 1.5s, opacity 1.5s;
+    visibility: hidden;
+    transition: opacity 1.5s, visibility 1.5s;
     position: fixed;
     width: 220px;
     height: 60px;
@@ -319,6 +323,7 @@ a {
 
 .not-shown {
     opacity: 1;
+    visibility: visible;
 }
 
 @media only screen and (max-width: 1000px) {
