@@ -181,13 +181,6 @@ a {
     flex-flow: column;
 }
 
-.section-m {
-    display: flex;
-    margin: 0 auto 300px auto;
-    width: 60%;
-    flex-flow: column;
-}
-
 .section-last {
     display: flex;
     margin: 0 auto 60px auto;
