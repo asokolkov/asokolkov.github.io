@@ -7,6 +7,8 @@ function showNotification() {
 }
 
 function copyToClipboard(that) {
-    navigator.clipboard.writeText(that.textContent)
-    showNotification()
+    if (window.screen.width > 1000) {
+        navigator.clipboard.writeText(that.textContent)
+        showNotification()
+    }
 }
